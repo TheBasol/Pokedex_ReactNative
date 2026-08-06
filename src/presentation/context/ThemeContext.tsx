@@ -9,7 +9,7 @@ import {
 import { adaptNavigationTheme, MD3DarkTheme, MD3LightTheme, PaperProvider } from 'react-native-paper';
 import { useColorScheme } from "react-native";
 
-const { LightTheme, DarkTheme } = adaptNavigationTheme({
+const { LightTheme } = adaptNavigationTheme({
   reactNavigationLight: NavigationDefaultTheme,
   reactNavigationDark: NavigationDarkTheme,
 });

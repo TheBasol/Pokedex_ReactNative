@@ -1,7 +1,7 @@
 import { StyleSheet, View, Dimensions } from "react-native"
 import { Text } from "react-native-paper"
 import { getPokemons } from "../../../actions/pokemons"
-import { useInfiniteQuery, useQuery, useQueryClient } from "@tanstack/react-query"
+import { useInfiniteQuery, useQueryClient } from "@tanstack/react-query"
 import { PokeballBG } from "../../components/ui/PokeballBG"
 import { FlatList } from "react-native-gesture-handler"
 import { globalTheme } from "../../../config/theme/global-theme"
@@ -13,7 +13,7 @@ export const HomeScreen = () => {
   const { top } = useSafeAreaInsets();
   const queryClient = useQueryClient();
 
-  const { isLoading, data, fetchNextPage } = useInfiniteQuery({
+  const { data, fetchNextPage } = useInfiniteQuery({
     queryKey: ['pokemons', 'infinite'],
     initialPageParam: 0,
     staleTime: 1000 * 60 * 60,

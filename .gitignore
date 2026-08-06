@@ -54,9 +54,26 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 
-# Expo
+# Expo & CNG (Continuous Native Generation)
 .expo/
+.expo-shared/
+.eas/
 web-build/
+dist/
+
+# pnpm
+.pnpm-store/
+.pnpm-debug.log*
+
+# Expo build artifacts
+*.apk
+*.aab
+*.app
+*.ipa
+
+# Native code generated dynamically by `npx expo prebuild`
+/android/
+/ios/
 
 # fastlane
 #

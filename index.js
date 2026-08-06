@@ -1,9 +1,4 @@
-/**
- * @format
- */
+import { registerRootComponent } from 'expo';
+import App from './App';
 
-import { AppRegistry } from 'react-native';
-import { name as appName } from './app.json';
-import { PokedexApp } from './src/PokemonApp';
-
-AppRegistry.registerComponent(appName, () => PokedexApp);
+registerRootComponent(App);

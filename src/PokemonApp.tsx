@@ -1,5 +1,4 @@
 
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { StackNavigator } from "./presentation/navigator/StackNavigator";
 import { ThemeContextProvider } from "./presentation/context/ThemeContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
